@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 240975157}
   - component: {fileID: 240975156}
   - component: {fileID: 240975155}
+  - component: {fileID: 240975158}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -108,6 +109,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &240975158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240975153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c23c8302adc1e3448f0d3f9ae7ba7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPower: 1200
+  parent: {fileID: 0}
 --- !u!1 &247991873
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +135,7 @@ GameObject:
   - component: {fileID: 247991877}
   - component: {fileID: 247991876}
   - component: {fileID: 247991875}
+  - component: {fileID: 247991878}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -216,6 +232,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &247991878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247991873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c23c8302adc1e3448f0d3f9ae7ba7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPower: 1200
+  parent: {fileID: 0}
 --- !u!1 &899639775
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +258,7 @@ GameObject:
   - component: {fileID: 899639779}
   - component: {fileID: 899639778}
   - component: {fileID: 3656265558248923743}
+  - component: {fileID: 899639780}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -324,6 +355,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &899639780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899639775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c23c8302adc1e3448f0d3f9ae7ba7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPower: 1200
+  parent: {fileID: 0}
 --- !u!1 &1705753856
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +381,7 @@ GameObject:
   - component: {fileID: 1705753860}
   - component: {fileID: 1705753859}
   - component: {fileID: 1705753858}
+  - component: {fileID: 1705753861}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -432,6 +478,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1705753861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705753856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c23c8302adc1e3448f0d3f9ae7ba7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPower: 1200
+  parent: {fileID: 0}
 --- !u!1 &3988136086177831313
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,9 +675,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_LinearDrag: 1
+  m_AngularDrag: 0.5
+  m_GravityScale: 0.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
