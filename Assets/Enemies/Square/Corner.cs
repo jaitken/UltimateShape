@@ -21,12 +21,12 @@ public class Corner : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        
+        Debug.Log("Bad hit");
+
         Rigidbody2D playerRb = col.gameObject.GetComponent<Rigidbody2D>();
         Vector3 force = Vector3.Normalize(transform.position - col.gameObject.transform.position);
-        Debug.Log(force* launchPower);
         playerRb.AddForce(-force * launchPower);
 
     }
